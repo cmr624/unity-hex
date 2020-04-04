@@ -63,7 +63,37 @@ public class HexGrid : MonoBehaviour
       cell.transform.SetParent(transform, false);
       cell.transform.localPosition = position;
       cell.coordinates = HexCoordinates.FromOffsetCoordinates(x, z);
-      cell.color = defaultColor; 
+      cell.color = defaultColor;
+
+      if (x > 0)
+      {
+        //set all W -> E neighbors on every row
+        cell.SetNeighbor(HexDirection.W, cells[i - 1]); 
+      }
+
+      if (z > 0)
+      {
+         // (bitwise operation for even number) even rows
+         if ((z & 1) == 0)
+         {
+           cell.SetNeighbor(HexDirection.SE, cells[i - width]);
+           if (x > 0)
+           {
+              cell.SetNeighbor(HexDirection.SW, cells[i - width - 1]);
+           }
+         }
+         //odd rows
+         else
+         {
+            cell.SetNeighbor(HexDirection.SW, cells[i - width]);
+            if (x < width - 1)
+            {
+              cell.SetNeighbor(HexDirection.SE, cells[i - width + 1]); 
+            }
+         }
+         
+      }
+     
       //instantiate text
       Text label = Instantiate(cellLabelPrefab, gridCanvas.transform, false);
       label.rectTransform.anchoredPosition = new Vector2(position.x, position.z);
