@@ -29,12 +29,28 @@ public class HexMapEditor : MonoBehaviour
         RaycastHit hit;
         if (Physics.Raycast(inputRay, out hit))
         {
-            hexGrid.ColorCell(hit.point, activeColor);
+            EditCell(hexGrid.GetCell(hit.point));
         }
     }
 
     public void SelectColor(int index)
     {
         activeColor = colors[index];
+    }
+
+
+    private int activeElevation;
+    void EditCell(HexCell cell)
+    {
+        cell.color = activeColor;
+        cell.Elevation = activeElevation;
+        hexGrid.Refresh();
+    }
+
+    // slider to select from an elevation range
+    // UI slider function - requires a float param
+    public void SetElevation(float elevation)
+    {
+        activeElevation = (int) elevation;
     }
 }

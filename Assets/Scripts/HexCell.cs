@@ -9,7 +9,22 @@ public class HexCell : MonoBehaviour
     public HexCoordinates coordinates;
     public Color color;
 
+    //height of cell
 
+    public int Elevation
+    {
+        get { return elevation; } 
+        set
+        {
+          elevation = value;
+          Vector3 position = transform.localPosition;
+          position.y = value * HexMetrics.elevationStep;
+          transform.localPosition = position;
+        } 
+    }
+
+    private int elevation;
+    
     public HexCell GetNeighbor(HexDirection direction)
     {
         return neighbors[(int) direction];
