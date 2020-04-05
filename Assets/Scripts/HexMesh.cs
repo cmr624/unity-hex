@@ -147,6 +147,7 @@ public class HexMesh : MonoBehaviour
             if (rightEdgeType == HexEdgeType.Slope)
             {
                 TriangulateCornerTerraces(bottom, bottomCell, left, leftCell, right, rightCell);
+                return;
             }
         }
         
