@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36474673-3561-4d90-9e78-dc2066a8486b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexMetrics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HexMetrics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexMesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HexMesh.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -11,7 +11,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.52768904">
+    <splitter split-orientation="horizontal" split-proportion="0.5963791">
       <split-first>
         <leaf>
           <file pinned="false" current-in-tab="false">
@@ -62,51 +62,55 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexMesh.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="348">
-                  <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
+                <state relative-caret-position="30">
+                  <caret line="116" column="68" selection-start-line="116" selection-start-column="68" selection-end-line="116" selection-end-column="68" />
                   <folding>
-                    <marker date="1586102778376" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1586102778376" expanded="true" signature="176:4303" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="374:662" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="708:1266" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="864:919" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="1115:1217" ph="/* reassigning the mesh to the collider after traingulating ... */" />
-                    <marker date="1586102778376" expanded="true" signature="1332:1580" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="1620:1760" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="1700:1754" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="1820:2234" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="2148:2228" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="2328:3234" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="2420:2460" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="2952:3228" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="3295:3379" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="3419:3512" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="3576:3979" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="4022:4130" ph="{...}" />
-                    <marker date="1586102778376" expanded="true" signature="4193:4301" ph="{...}" />
+                    <marker date="1586104007015" expanded="false" signature="6:78" ph="..." />
+                    <marker date="1586104007015" expanded="true" signature="176:5521" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="374:662" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="708:1266" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="864:919" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="1115:1217" ph="/* reassigning the mesh to the collider after traingulating ... */" />
+                    <marker date="1586104007015" expanded="true" signature="1332:1580" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="1620:1760" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="1700:1754" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="1820:2234" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="2148:2228" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="2328:3338" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="2420:2460" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="2843:2923" ph="/* AddQuad(v1, v2, v3, v4); ... */" />
+                    <marker date="1586104007015" expanded="true" signature="3056:3332" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="3499:4453" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="3953:4335" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="4514:4598" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="4638:4731" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="4794:5197" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="5240:5348" ph="{...}" />
+                    <marker date="1586104007015" expanded="true" signature="5411:5519" ph="{...}" />
                   </folding>
                 </state>
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexMetrics.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="502">
-                  <caret line="63" column="3" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
+                <state relative-caret-position="190">
+                  <caret line="63" column="3" lean-forward="true" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
                   <folding>
-                    <marker date="1586103408665" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1586103408665" expanded="true" signature="110:1972" ph="{...}" />
-                    <marker date="1586103408665" expanded="true" signature="443:805" ph="{...}" />
-                    <marker date="1586103408665" expanded="true" signature="874:923" ph="{...}" />
-                    <marker date="1586103408665" expanded="true" signature="989:1042" ph="{...}" />
-                    <marker date="1586103408665" expanded="true" signature="1113:1176" ph="{...}" />
-                    <marker date="1586103408665" expanded="true" signature="1247:1314" ph="{...}" />
-                    <marker date="1586103408665" expanded="true" signature="1374:1470" ph="{...}" />
-                    <marker date="1586103408665" expanded="true" signature="1822:1969" ph="{...}" />
+                    <marker date="1586103472085" expanded="false" signature="6:78" ph="..." />
+                    <marker date="1586103472085" expanded="true" signature="110:2245" ph="{...}" />
+                    <marker date="1586103472085" expanded="true" signature="443:805" ph="{...}" />
+                    <marker date="1586103472085" expanded="true" signature="874:923" ph="{...}" />
+                    <marker date="1586103472085" expanded="true" signature="989:1042" ph="{...}" />
+                    <marker date="1586103472085" expanded="true" signature="1113:1176" ph="{...}" />
+                    <marker date="1586103472085" expanded="true" signature="1247:1314" ph="{...}" />
+                    <marker date="1586103472085" expanded="true" signature="1374:1470" ph="{...}" />
+                    <marker date="1586103472085" expanded="true" signature="1822:2070" ph="{...}" />
+                    <marker date="1586103472085" expanded="true" signature="2134:2239" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -213,8 +217,8 @@
         <option value="$PROJECT_DIR$/Assets/Scripts/HexMapEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HexGrid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HexCell.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HexMesh.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HexMetrics.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HexMesh.cs" />
       </list>
     </option>
   </component>
@@ -306,12 +310,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585949812267</updated>
-      <workItem from="1585949816843" duration="15996000" />
+      <workItem from="1585949816843" duration="16689000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15996000" />
+    <option name="totallyTimeSpent" value="16689000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -496,34 +500,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexMesh.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="348">
-          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
-          <folding>
-            <marker date="1586102778376" expanded="false" signature="6:78" ph="..." />
-            <marker date="1586102778376" expanded="true" signature="176:4303" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="374:662" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="708:1266" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="864:919" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="1115:1217" ph="/* reassigning the mesh to the collider after traingulating ... */" />
-            <marker date="1586102778376" expanded="true" signature="1332:1580" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="1620:1760" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="1700:1754" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="1820:2234" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="2148:2228" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="2328:3234" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="2420:2460" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="2952:3228" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="3295:3379" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="3419:3512" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="3576:3979" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="4022:4130" ph="{...}" />
-            <marker date="1586102778376" expanded="true" signature="4193:4301" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexCell.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="176">
@@ -541,18 +517,50 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexMetrics.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="502">
-          <caret line="63" column="3" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
+        <state relative-caret-position="190">
+          <caret line="63" column="3" lean-forward="true" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
           <folding>
-            <marker date="1586103408665" expanded="false" signature="6:78" ph="..." />
-            <marker date="1586103408665" expanded="true" signature="110:1972" ph="{...}" />
-            <marker date="1586103408665" expanded="true" signature="443:805" ph="{...}" />
-            <marker date="1586103408665" expanded="true" signature="874:923" ph="{...}" />
-            <marker date="1586103408665" expanded="true" signature="989:1042" ph="{...}" />
-            <marker date="1586103408665" expanded="true" signature="1113:1176" ph="{...}" />
-            <marker date="1586103408665" expanded="true" signature="1247:1314" ph="{...}" />
-            <marker date="1586103408665" expanded="true" signature="1374:1470" ph="{...}" />
-            <marker date="1586103408665" expanded="true" signature="1822:1969" ph="{...}" />
+            <marker date="1586103472085" expanded="false" signature="6:78" ph="..." />
+            <marker date="1586103472085" expanded="true" signature="110:2245" ph="{...}" />
+            <marker date="1586103472085" expanded="true" signature="443:805" ph="{...}" />
+            <marker date="1586103472085" expanded="true" signature="874:923" ph="{...}" />
+            <marker date="1586103472085" expanded="true" signature="989:1042" ph="{...}" />
+            <marker date="1586103472085" expanded="true" signature="1113:1176" ph="{...}" />
+            <marker date="1586103472085" expanded="true" signature="1247:1314" ph="{...}" />
+            <marker date="1586103472085" expanded="true" signature="1374:1470" ph="{...}" />
+            <marker date="1586103472085" expanded="true" signature="1822:2070" ph="{...}" />
+            <marker date="1586103472085" expanded="true" signature="2134:2239" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexMesh.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="30">
+          <caret line="116" column="68" selection-start-line="116" selection-start-column="68" selection-end-line="116" selection-end-column="68" />
+          <folding>
+            <marker date="1586104007015" expanded="false" signature="6:78" ph="..." />
+            <marker date="1586104007015" expanded="true" signature="176:5521" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="374:662" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="708:1266" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="864:919" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="1115:1217" ph="/* reassigning the mesh to the collider after traingulating ... */" />
+            <marker date="1586104007015" expanded="true" signature="1332:1580" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="1620:1760" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="1700:1754" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="1820:2234" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="2148:2228" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="2328:3338" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="2420:2460" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="2843:2923" ph="/* AddQuad(v1, v2, v3, v4); ... */" />
+            <marker date="1586104007015" expanded="true" signature="3056:3332" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="3499:4453" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="3953:4335" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="4514:4598" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="4638:4731" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="4794:5197" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="5240:5348" ph="{...}" />
+            <marker date="1586104007015" expanded="true" signature="5411:5519" ph="{...}" />
           </folding>
         </state>
       </provider>
