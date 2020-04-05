@@ -12,6 +12,7 @@
           <e p="HexCell.cs" t="Include" />
           <e p="HexCoordinates.cs" t="Include" />
           <e p="HexDirection.cs" t="Include" />
+          <e p="HexEdgeType.cs" t="Include" />
           <e p="HexGrid.cs" t="Include" />
           <e p="HexMapEditor.cs" t="Include" />
           <e p="HexMesh.cs" t="Include" />
