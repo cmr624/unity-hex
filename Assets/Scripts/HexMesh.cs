@@ -129,8 +129,8 @@ public class HexMesh : MonoBehaviour
             {
                 TriangulateCorner(v5, nextNeighbor, v2, cell, v4, neighbor);
             }
-            AddTriangle(v2, v4, v5);
-            AddTriangleColor(cell.color, neighbor.color, nextNeighbor.color);
+            //AddTriangle(v2, v4, v5);
+            //AddTriangleColor(cell.color, neighbor.color, nextNeighbor.color);
         }
     }
 
