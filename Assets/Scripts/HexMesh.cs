@@ -155,6 +155,8 @@ public class HexMesh : MonoBehaviour
                 TriangulateCornerTerraces(left, leftCell, right, rightCell, bottom, bottomCell);
                 return;
             }
+            TriangulateCornerTerracesCliff(bottom, bottomCell, left, leftCell, right, rightCell);
+            return;
         }
 
         if (rightEdgeType == HexEdgeType.Slope)
@@ -169,6 +171,13 @@ public class HexMesh : MonoBehaviour
 
         AddTriangle(bottom, left, right);
         AddTriangleColor(bottomCell.color, leftCell.color, rightCell.color);
+    }
+
+    void TriangulateCornerTerracesCliff(Vector3 begin, HexCell beginCell,
+        Vector3 left, HexCell leftCell,
+        Vector3 right, HexCell rightCell)
+    {
+        
     }
 
     void TriangulateCornerTerraces(Vector3 begin, HexCell beginCell,
