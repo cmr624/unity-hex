@@ -93,9 +93,16 @@ public class HexMesh : MonoBehaviour
        
         
         //terrace time!!
-        TriangulateEdgeTerraces(v1, v2, cell, v3, v4, neighbor);
-        // AddQuad(v1, v2, v3, v4);
-        // AddQuadColor(cell.color, neighbor.color);
+        if (cell.GetEdgeType(direction) == HexEdgeType.Slope)
+        {
+            TriangulateEdgeTerraces(v1, v2, cell,
+                v3, v4, neighbor);
+        }
+        else
+        {
+           AddQuad(v1, v2, v3, v4);
+           AddQuadColor(cell.color, neighbor.color);
+        }
 
         HexCell nextNeighbor = cell.GetNeighbor(direction.Next());
         if (direction <= HexDirection.E && nextNeighbor != null)
@@ -103,9 +110,37 @@ public class HexMesh : MonoBehaviour
 
             Vector3 v5 = v2 + HexMetrics.GetBridge(direction.Next());
             v5.y = nextNeighbor.Elevation * HexMetrics.elevationStep;
+            if (cell.Elevation <= neighbor.Elevation)
+            {
+                if (cell.Elevation <= nextNeighbor.Elevation)
+                {
+                    TriangulateCorner(v2, cell, v4, neighbor, v5, nextNeighbor);
+                }
+                else
+                {
+                    TriangulateCorner(v5, nextNeighbor, v2, cell, v4, neighbor);
+                }
+            }
+            else if (neighbor.Elevation <= nextNeighbor.Elevation)
+            {
+                TriangulateCorner(v4, neighbor, v5, nextNeighbor, v2, cell);
+            }
+            else
+            {
+                TriangulateCorner(v5, nextNeighbor, v2, cell, v4, neighbor);
+            }
             AddTriangle(v2, v4, v5);
             AddTriangleColor(cell.color, neighbor.color, nextNeighbor.color);
         }
+    }
+
+
+    void TriangulateCorner(Vector3 bottom, HexCell bottomCell,
+        Vector3 left, HexCell leftCell,
+        Vector3 right, HexCell rightCell)
+    {
+        AddTriangle(bottom, left, right);
+        AddTriangleColor(bottomCell.color, leftCell.color, rightCell.color);
     }
 
     void TriangulateEdgeTerraces(
