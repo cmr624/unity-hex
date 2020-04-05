@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="36474673-3561-4d90-9e78-dc2066a8486b" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexMesh.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HexMesh.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexMetrics.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HexMetrics.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -62,11 +62,11 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="true">
+          <file pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexMesh.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="591">
-                  <caret line="102" selection-start-line="102" selection-end-line="102" />
+                <state relative-caret-position="348">
+                  <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
                   <folding>
                     <marker date="1586102778376" expanded="false" signature="6:78" ph="..." />
                     <marker date="1586102778376" expanded="true" signature="176:4303" ph="{...}" />
@@ -92,20 +92,21 @@
               </provider>
             </entry>
           </file>
-          <file pinned="false" current-in-tab="false">
+          <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexMetrics.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="112">
-                  <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
+                <state relative-caret-position="502">
+                  <caret line="63" column="3" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
                   <folding>
-                    <marker date="1586101504448" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1586101504448" expanded="true" signature="110:1461" ph="{...}" />
-                    <marker date="1586101504448" expanded="true" signature="435:797" ph="{...}" />
-                    <marker date="1586101504448" expanded="true" signature="863:912" ph="{...}" />
-                    <marker date="1586101504448" expanded="true" signature="978:1031" ph="{...}" />
-                    <marker date="1586101504448" expanded="true" signature="1102:1165" ph="{...}" />
-                    <marker date="1586101504448" expanded="true" signature="1236:1303" ph="{...}" />
-                    <marker date="1586101504448" expanded="true" signature="1363:1459" ph="{...}" />
+                    <marker date="1586103408665" expanded="false" signature="6:78" ph="..." />
+                    <marker date="1586103408665" expanded="true" signature="110:1972" ph="{...}" />
+                    <marker date="1586103408665" expanded="true" signature="443:805" ph="{...}" />
+                    <marker date="1586103408665" expanded="true" signature="874:923" ph="{...}" />
+                    <marker date="1586103408665" expanded="true" signature="989:1042" ph="{...}" />
+                    <marker date="1586103408665" expanded="true" signature="1113:1176" ph="{...}" />
+                    <marker date="1586103408665" expanded="true" signature="1247:1314" ph="{...}" />
+                    <marker date="1586103408665" expanded="true" signature="1374:1470" ph="{...}" />
+                    <marker date="1586103408665" expanded="true" signature="1822:1969" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -134,8 +135,8 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexCell.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="476">
-                  <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
+                <state relative-caret-position="176">
+                  <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
                   <folding>
                     <marker date="1586102565648" expanded="false" signature="6:78" ph="..." />
                     <marker date="1586102565648" expanded="true" signature="116:1172" ph="{...}" />
@@ -209,11 +210,11 @@
         <option value="$PROJECT_DIR$/Assets/Shaders/SurfaceShader.shader" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HexDirections.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HexDirection.cs" />
-        <option value="$PROJECT_DIR$/Assets/Scripts/HexMetrics.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HexMapEditor.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HexGrid.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HexCell.cs" />
         <option value="$PROJECT_DIR$/Assets/Scripts/HexMesh.cs" />
+        <option value="$PROJECT_DIR$/Assets/Scripts/HexMetrics.cs" />
       </list>
     </option>
   </component>
@@ -305,12 +306,12 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1585949812267</updated>
-      <workItem from="1585949816843" duration="15529000" />
+      <workItem from="1585949816843" duration="15996000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15529000" />
+    <option name="totallyTimeSpent" value="15996000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -451,23 +452,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexMetrics.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="112">
-          <caret line="9" column="41" selection-start-line="9" selection-start-column="41" selection-end-line="9" selection-end-column="41" />
-          <folding>
-            <marker date="1586101504448" expanded="false" signature="6:78" ph="..." />
-            <marker date="1586101504448" expanded="true" signature="110:1461" ph="{...}" />
-            <marker date="1586101504448" expanded="true" signature="435:797" ph="{...}" />
-            <marker date="1586101504448" expanded="true" signature="863:912" ph="{...}" />
-            <marker date="1586101504448" expanded="true" signature="978:1031" ph="{...}" />
-            <marker date="1586101504448" expanded="true" signature="1102:1165" ph="{...}" />
-            <marker date="1586101504448" expanded="true" signature="1236:1303" ph="{...}" />
-            <marker date="1586101504448" expanded="true" signature="1363:1459" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexMapEditor.cs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="632">
@@ -512,25 +496,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexCell.cs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="476">
-          <caret line="27" column="30" selection-start-line="27" selection-start-column="30" selection-end-line="27" selection-end-column="30" />
-          <folding>
-            <marker date="1586102565648" expanded="false" signature="6:78" ph="..." />
-            <marker date="1586102565648" expanded="true" signature="116:1172" ph="{...}" />
-            <marker date="1586102565648" expanded="true" signature="326:846" ph="{...}" />
-            <marker date="1586102565648" expanded="true" signature="379:839" ph="{...}" />
-            <marker date="1586102565648" expanded="true" signature="934:989" ph="{...}" />
-            <marker date="1586102565648" expanded="true" signature="1056:1170" ph="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexMesh.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="591">
-          <caret line="102" selection-start-line="102" selection-end-line="102" />
+        <state relative-caret-position="348">
+          <caret line="99" lean-forward="true" selection-start-line="99" selection-end-line="99" />
           <folding>
             <marker date="1586102778376" expanded="false" signature="6:78" ph="..." />
             <marker date="1586102778376" expanded="true" signature="176:4303" ph="{...}" />
@@ -551,6 +520,39 @@
             <marker date="1586102778376" expanded="true" signature="3576:3979" ph="{...}" />
             <marker date="1586102778376" expanded="true" signature="4022:4130" ph="{...}" />
             <marker date="1586102778376" expanded="true" signature="4193:4301" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexCell.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="12" column="3" selection-start-line="12" selection-start-column="3" selection-end-line="12" selection-end-column="3" />
+          <folding>
+            <marker date="1586102565648" expanded="false" signature="6:78" ph="..." />
+            <marker date="1586102565648" expanded="true" signature="116:1172" ph="{...}" />
+            <marker date="1586102565648" expanded="true" signature="326:846" ph="{...}" />
+            <marker date="1586102565648" expanded="true" signature="379:839" ph="{...}" />
+            <marker date="1586102565648" expanded="true" signature="934:989" ph="{...}" />
+            <marker date="1586102565648" expanded="true" signature="1056:1170" ph="{...}" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexMetrics.cs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="502">
+          <caret line="63" column="3" selection-start-line="63" selection-start-column="3" selection-end-line="63" selection-end-column="3" />
+          <folding>
+            <marker date="1586103408665" expanded="false" signature="6:78" ph="..." />
+            <marker date="1586103408665" expanded="true" signature="110:1972" ph="{...}" />
+            <marker date="1586103408665" expanded="true" signature="443:805" ph="{...}" />
+            <marker date="1586103408665" expanded="true" signature="874:923" ph="{...}" />
+            <marker date="1586103408665" expanded="true" signature="989:1042" ph="{...}" />
+            <marker date="1586103408665" expanded="true" signature="1113:1176" ph="{...}" />
+            <marker date="1586103408665" expanded="true" signature="1247:1314" ph="{...}" />
+            <marker date="1586103408665" expanded="true" signature="1374:1470" ph="{...}" />
+            <marker date="1586103408665" expanded="true" signature="1822:1969" ph="{...}" />
           </folding>
         </state>
       </provider>
