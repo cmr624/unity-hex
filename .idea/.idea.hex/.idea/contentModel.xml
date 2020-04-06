@@ -9,6 +9,7 @@
           <e p="HexCoordinatesDrawer.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
+          <e p="EdgeVertices.cs" t="Include" />
           <e p="HexCell.cs" t="Include" />
           <e p="HexCoordinates.cs" t="Include" />
           <e p="HexDirection.cs" t="Include" />
