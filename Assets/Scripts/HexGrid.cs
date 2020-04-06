@@ -112,7 +112,8 @@ public class HexGrid : MonoBehaviour
       label.text = cell.coordinates.ToStringOnSeparateLines();
       cell.uiRect = label.rectTransform;
 
-
+      //call the cell's elevation "setter"
+      cell.Elevation = 0;
 
 
 

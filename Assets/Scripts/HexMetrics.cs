@@ -16,9 +16,14 @@ public static class HexMetrics
 
    public static Texture2D noiseSource;
 
+   public const float noiseScale = 0.003f;
+
+   public const float elevationPerturbStrength = 1.5f;
+   
    public static Vector4 SampleNoise(Vector3 position)
    {
-      return noiseSource.GetPixelBilinear(position.x, position.y);
+      return noiseSource.GetPixelBilinear(position.x * noiseScale, 
+         position.y * noiseScale);
    }
    
    
