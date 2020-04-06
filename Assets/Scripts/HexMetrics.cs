@@ -13,6 +13,12 @@ public static class HexMetrics
    public const float elevationStep = 5f;
 
 
+   public static Texture2D noiseSource;
+
+   public static Vector4 SampleNoise(Vector3 position)
+   {
+      return noiseSource.GetPixelBilinear(position.x, position.y);
+   }
    
    
    // corner pointing up, corner vectors

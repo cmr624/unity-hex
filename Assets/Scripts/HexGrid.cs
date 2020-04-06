@@ -16,9 +16,17 @@ public class HexGrid : MonoBehaviour
 
    public Color defaultColor = Color.white;
    public Color touchedColor = Color.magenta;
-   
+
+   public Texture2D noiseSource;
+
+   private void OnEnable()
+   {
+      HexMetrics.noiseSource = noiseSource;
+   }
+
    private void Awake()
    {
+      HexMetrics.noiseSource = noiseSource;
       gridCanvas = GetComponentInChildren<Canvas>();
       hexMesh = GetComponentInChildren<HexMesh>();
       
