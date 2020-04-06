@@ -16,9 +16,17 @@ public class HexGrid : MonoBehaviour
 
    public Color defaultColor = Color.white;
    public Color touchedColor = Color.magenta;
-   
+
+   public Texture2D noiseSource;
+
+   private void OnEnable()
+   {
+      HexMetrics.noiseSource = noiseSource;
+   }
+
    private void Awake()
    {
+      HexMetrics.noiseSource = noiseSource;
       gridCanvas = GetComponentInChildren<Canvas>();
       hexMesh = GetComponentInChildren<HexMesh>();
       
@@ -104,7 +112,8 @@ public class HexGrid : MonoBehaviour
       label.text = cell.coordinates.ToStringOnSeparateLines();
       cell.uiRect = label.rectTransform;
 
-
+      //call the cell's elevation "setter"
+      cell.Elevation = 0;
 
 
 
