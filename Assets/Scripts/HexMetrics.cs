@@ -7,12 +7,12 @@ public static class HexMetrics
    public const float outerRadius = 10f;
    public const float innerRadius = outerRadius * 0.866025104f;
 
-   public const float solidFactor = 0.75f;
+   public const float solidFactor = 0.8f;
    public const float blendFactor = 1f - solidFactor;
 
-   public const float elevationStep = 5f;
+   public const float elevationStep = 3f;
 
-   public const float cellPerturbStrength = 5f;
+   public const float cellPerturbStrength = 4f;
 
    public static Texture2D noiseSource;
 
