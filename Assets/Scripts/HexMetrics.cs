@@ -12,6 +12,7 @@ public static class HexMetrics
 
    public const float elevationStep = 5f;
 
+   public const float cellPerturbStrength = 5f;
 
    public static Texture2D noiseSource;
 
