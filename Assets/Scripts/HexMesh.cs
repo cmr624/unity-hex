@@ -32,19 +32,16 @@ public struct EdgeVertices
 public class HexMesh : MonoBehaviour
 {
     private Mesh hexMesh;
-    private List<Vector3> vertices;
-    private List<int> triangles;
+    private static List<Vector3> vertices = new List<Vector3>();
+    private static List<Color> colors = new List<Color>();
+    private static List<int> triangles = new List<int>();
     private MeshCollider meshCollider;
-    private List<Color> colors;
     
     private void Awake()
     {
         GetComponent<MeshFilter>().mesh = hexMesh = new Mesh();
         meshCollider = gameObject.AddComponent<MeshCollider>();
         hexMesh.name = "Hex Mesh";
-        vertices = new List<Vector3>();
-        colors = new List<Color>();
-        triangles = new List<int>();
     }
 
 

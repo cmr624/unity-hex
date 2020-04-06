@@ -44,7 +44,7 @@ public class HexMapEditor : MonoBehaviour
     {
         cell.color = activeColor;
         cell.Elevation = activeElevation;
-        hexGrid.Refresh();
+       // hexGrid.Refresh();
     }
 
     // slider to select from an elevation range

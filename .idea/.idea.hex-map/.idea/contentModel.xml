@@ -14,6 +14,7 @@
           <e p="HexDirection.cs" t="Include" />
           <e p="HexEdgeType.cs" t="Include" />
           <e p="HexGrid.cs" t="Include" />
+          <e p="HexGridChunk.cs" t="Include" />
           <e p="HexMapEditor.cs" t="Include" />
           <e p="HexMesh.cs" t="Include" />
           <e p="HexMetrics.cs" t="Include" />
