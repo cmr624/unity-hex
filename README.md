@@ -6,3 +6,4 @@ Catlike Coding Tutorial - Hex Map
  - Basic Hex
  - Color Blending
  - Elevation, Terracing
+ - Noise
