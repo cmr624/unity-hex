@@ -98,7 +98,7 @@ public class HexGrid : MonoBehaviour
       //cell.transform.SetParent(transform, false);
       cell.transform.localPosition = position;
       cell.coordinates = HexCoordinates.FromOffsetCoordinates(x, z);
-      cell.color = defaultColor;
+      cell.Color = defaultColor;
 
       if (x > 0)
       {
