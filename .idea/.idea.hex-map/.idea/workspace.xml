@@ -2,24 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="595e28e5-0231-4d55-b1aa-4e8fad67ab2d" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.hex-map/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.hex-map/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scenes/HexScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/HexScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexCell.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexCell.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexCoordinates.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexCoordinates.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexDirection.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexDirection.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexEdgeType.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexEdgeType.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexGrid.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexGrid.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexGridChunk.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexGridChunk.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexMesh.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexMesh.cs.meta" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexMetrics.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexMetrics.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/HexMapCamera.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/HexMapCamera.cs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -28,7 +12,7 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.5">
+    <splitter split-orientation="horizontal" split-proportion="0.45260915">
       <split-first>
         <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
           <file pinned="false" current-in-tab="true">
@@ -60,15 +44,18 @@
           <file pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexMapCamera.cs">
               <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="544">
-                  <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+                <state relative-caret-position="602">
+                  <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
                   <folding>
-                    <marker date="1586292418935" expanded="false" signature="6:78" ph="..." />
-                    <marker date="1586292418935" expanded="true" signature="121:891" ph="{...}" />
-                    <marker date="1586292418935" expanded="true" signature="289:371" ph="{...}" />
-                    <marker date="1586292418935" expanded="true" signature="389:534" ph="{...}" />
-                    <marker date="1586292418935" expanded="true" signature="481:529" ph="{...}" />
-                    <marker date="1586292418935" expanded="true" signature="567:885" ph="{...}" />
+                    <marker date="1586293566414" expanded="false" signature="6:78" ph="..." />
+                    <marker date="1586293566414" expanded="true" signature="121:1711" ph="{...}" />
+                    <marker date="1586293566414" expanded="true" signature="364:446" ph="{...}" />
+                    <marker date="1586293566414" expanded="true" signature="464:806" ph="{...}" />
+                    <marker date="1586293566414" expanded="true" signature="556:604" ph="{...}" />
+                    <marker date="1586293566414" expanded="true" signature="744:801" ph="{...}" />
+                    <marker date="1586293566414" expanded="true" signature="858:1274" ph="{...}" />
+                    <marker date="1586293566414" expanded="true" signature="1318:1351" ph="{...}" />
+                    <marker date="1586293566414" expanded="true" signature="1387:1705" ph="{...}" />
                   </folding>
                 </state>
               </provider>
@@ -156,12 +143,12 @@
       <option name="presentableId" value="Default" />
       <updated>1586207599294</updated>
       <workItem from="1586207603221" duration="3686000" />
-      <workItem from="1586292085735" duration="444000" />
+      <workItem from="1586292085735" duration="1244000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4130000" />
+    <option name="totallyTimeSpent" value="4930000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -277,15 +264,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Assets/Scripts/HexMapCamera.cs">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="544">
-          <caret line="36" column="3" lean-forward="true" selection-start-line="36" selection-start-column="3" selection-end-line="36" selection-end-column="3" />
+        <state relative-caret-position="602">
+          <caret line="52" column="21" selection-start-line="52" selection-start-column="21" selection-end-line="52" selection-end-column="21" />
           <folding>
-            <marker date="1586292418935" expanded="false" signature="6:78" ph="..." />
-            <marker date="1586292418935" expanded="true" signature="121:891" ph="{...}" />
-            <marker date="1586292418935" expanded="true" signature="289:371" ph="{...}" />
-            <marker date="1586292418935" expanded="true" signature="389:534" ph="{...}" />
-            <marker date="1586292418935" expanded="true" signature="481:529" ph="{...}" />
-            <marker date="1586292418935" expanded="true" signature="567:885" ph="{...}" />
+            <marker date="1586293566414" expanded="false" signature="6:78" ph="..." />
+            <marker date="1586293566414" expanded="true" signature="121:1711" ph="{...}" />
+            <marker date="1586293566414" expanded="true" signature="364:446" ph="{...}" />
+            <marker date="1586293566414" expanded="true" signature="464:806" ph="{...}" />
+            <marker date="1586293566414" expanded="true" signature="556:604" ph="{...}" />
+            <marker date="1586293566414" expanded="true" signature="744:801" ph="{...}" />
+            <marker date="1586293566414" expanded="true" signature="858:1274" ph="{...}" />
+            <marker date="1586293566414" expanded="true" signature="1318:1351" ph="{...}" />
+            <marker date="1586293566414" expanded="true" signature="1387:1705" ph="{...}" />
           </folding>
         </state>
       </provider>
