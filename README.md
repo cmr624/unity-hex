@@ -7,3 +7,4 @@ Catlike Coding Tutorial - Hex Map
  - Color Blending
  - Elevation, Terracing
  - Noise
+ - Large Maps (Chunks of 10 x 10 hex grids)
