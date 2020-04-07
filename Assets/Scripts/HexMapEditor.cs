@@ -10,6 +10,12 @@ public class HexMapEditor : MonoBehaviour
 
     private Color activeColor;
 
+    
+    private bool applyColor;
+    private bool applyElevation = true;
+    
+    
+    private int activeElevation;
     private void Awake()
     {
         SelectColor(0);
@@ -33,18 +39,31 @@ public class HexMapEditor : MonoBehaviour
         }
     }
 
+
+    public void SetApplyElevation(bool toggle)
+    {
+        applyElevation = toggle;
+    }
     public void SelectColor(int index)
     {
-        activeColor = colors[index];
+        applyColor = index >= 0;
+        if (applyColor)
+        {
+            activeColor = colors[index];
+        }
     }
 
-
-    private int activeElevation;
     void EditCell(HexCell cell)
     {
-        cell.Color = activeColor;
-        cell.Elevation = activeElevation;
-       // hexGrid.Refresh();
+        if (applyColor)
+        {
+            cell.Color = activeColor;
+        }
+
+        if (applyElevation)
+        {
+            cell.Elevation = activeElevation;
+        }
     }
 
     // slider to select from an elevation range
