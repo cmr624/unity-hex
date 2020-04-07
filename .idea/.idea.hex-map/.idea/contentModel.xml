@@ -9,14 +9,18 @@
           <e p="HexCoordinatesDrawer.cs" t="Include" />
         </e>
         <e p="Scripts" t="Include">
-          <e p="HexCell.cs" t="Include" />
-          <e p="HexCoordinates.cs" t="Include" />
-          <e p="HexDirection.cs" t="Include" />
-          <e p="HexEdgeType.cs" t="Include" />
-          <e p="HexGrid.cs" t="Include" />
+          <e p="HexMap" t="Include">
+            <e p="HexCell.cs" t="Include" />
+            <e p="HexCoordinates.cs" t="Include" />
+            <e p="HexDirection.cs" t="Include" />
+            <e p="HexEdgeType.cs" t="Include" />
+            <e p="HexGrid.cs" t="Include" />
+            <e p="HexGridChunk.cs" t="Include" />
+            <e p="HexMesh.cs" t="Include" />
+            <e p="HexMetrics.cs" t="Include" />
+          </e>
+          <e p="HexMapCamera.cs" t="Include" />
           <e p="HexMapEditor.cs" t="Include" />
-          <e p="HexMesh.cs" t="Include" />
-          <e p="HexMetrics.cs" t="Include" />
         </e>
         <e p="Shaders" t="Include">
           <e p="SurfaceShader.shader" t="Include" />
