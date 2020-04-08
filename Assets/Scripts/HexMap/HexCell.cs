@@ -55,9 +55,92 @@ public class HexCell : MonoBehaviour
           
         } 
     }
-
     private int elevation = int.MinValue;
 
+    
+    // rivers!!!!
+    private bool hasIncomingRiver, hasOutgoingRiver;
+    private HexDirection incomingRiver, outgoingRiver;
+
+    public bool HasIncomingRiver
+    {
+        get => hasIncomingRiver;
+    }
+    public bool HasOutgoingRiver
+    {
+        get => hasOutgoingRiver;
+    }
+    public HexDirection IncomingRiver
+    {
+        get => incomingRiver;
+    }
+    public HexDirection OutGoingRiver
+    {
+        get => outgoingRiver;
+    }
+
+    public bool HasRiver
+    {
+        get
+        {
+            return hasIncomingRiver || hasOutgoingRiver;
+        }
+    }
+
+    public bool HasRiverBeginOrEnd
+    {
+        get { return hasIncomingRiver != hasOutgoingRiver; }
+    }
+
+    public bool HasRiverThroughEdge(HexDirection direction)
+    {
+        return hasIncomingRiver && incomingRiver == direction ||
+               hasOutgoingRiver && outgoingRiver == direction;
+    }
+
+
+    public void RemoveRiver()
+    {
+        RemoveOutgoingRiver();
+        RemoveIncomingRiver();
+    }
+    
+    public void RemoveIncomingRiver()
+    {
+        if (!hasIncomingRiver)
+        {
+            return;
+        }
+
+        hasIncomingRiver = false;
+        RefreshSelfOnly();
+
+        HexCell neighbor = GetNeighbor(incomingRiver);
+        neighbor.hasOutgoingRiver = false;
+        neighbor.RefreshSelfOnly();
+    }
+    public void RemoveOutgoingRiver()
+    {
+        if (!hasOutgoingRiver)
+        {
+            return;
+        }
+
+        hasOutgoingRiver = false;
+        RefreshSelfOnly();
+        
+        // make sure neighbor doesn't have river anymore from this cell
+        HexCell neighbor = GetNeighbor(outgoingRiver);
+        neighbor.hasIncomingRiver = false;
+        neighbor.RefreshSelfOnly();
+    }
+
+
+    void RefreshSelfOnly()
+    {
+        chunk.Refresh();
+    }
+    
     public HexEdgeType GetEdgeType(HexDirection direction)
     {
         return HexMetrics.GetEdgeType(elevation, neighbors[(int) direction].elevation);
@@ -79,6 +162,7 @@ public class HexCell : MonoBehaviour
         cell.neighbors[(int) direction.Opposite()] = this;
     }
 
+    // refreshes all neighbors (used when coloring, to account for blending)
     void Refresh()
     {
         if (chunk)
