@@ -50,6 +50,17 @@ public class HexCell : MonoBehaviour
           Vector3 uiPosition = uiRect.localPosition;
           uiPosition.z = -position.y;//elevation * -HexMetrics.elevationStep;
           uiRect.localPosition = uiPosition;
+         
+          // river refreshing to remove illegal rivers on elevation change
+          if (hasOutgoingRiver && elevation < GetNeighbor(outgoingRiver).elevation)
+          {
+              RemoveOutgoingRiver();
+          }
+
+          if (hasIncomingRiver && elevation > GetNeighbor(incomingRiver).elevation)
+          {
+              RemoveIncomingRiver();
+          }
           
           Refresh();
           
@@ -135,7 +146,38 @@ public class HexCell : MonoBehaviour
         neighbor.RefreshSelfOnly();
     }
 
+    public void SetOutgoingRiver(HexDirection direction)
+    {
+        if (hasOutgoingRiver && outgoingRiver == direction)
+        {
+            return;
+        }
 
+        HexCell neighbor = GetNeighbor(direction);
+        // rivers cannot flow uphill
+        if (!neighbor || elevation < neighbor.elevation)
+        {
+            return;
+        }
+        // remove outgoing / incoming river (if it conflicts) 
+        RemoveOutgoingRiver();
+        if (hasIncomingRiver && incomingRiver == direction)
+        {
+            RemoveIncomingRiver();
+        }
+
+        hasOutgoingRiver = true;
+        outgoingRiver = direction;
+        RefreshSelfOnly();
+        
+        neighbor.RemoveIncomingRiver();
+        neighbor.hasIncomingRiver = true;
+        neighbor.incomingRiver = direction.Opposite();
+        neighbor.RefreshSelfOnly();
+    }
+    
+    
+    
     void RefreshSelfOnly()
     {
         chunk.Refresh();
