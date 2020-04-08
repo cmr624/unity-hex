@@ -10,13 +10,18 @@ public class HexMapEditor : MonoBehaviour
 
     private Color activeColor;
 
+
+    enum OptionalToggle
+    {
+        Ignore, Yes, No
+    }
+
+    private OptionalToggle riverMode;
     
     private bool applyColor;
     private bool applyElevation = true;
     
-    
     private int activeElevation;
-
     private int brushSize;
     
     private void Awake()
@@ -41,7 +46,11 @@ public class HexMapEditor : MonoBehaviour
             EditCells(hexGrid.GetCell(hit.point));
         }
     }
-
+    public void SetRiverMode(int mode)
+    {
+        riverMode = (OptionalToggle) mode;
+    }
+    
     public void SetBrushSize(float size)
     {
         brushSize = (int) size;
