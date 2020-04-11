@@ -201,7 +201,8 @@ public class HexMesh : MonoBehaviour
             {
                 center += HexMetrics.GetFirstSolidCorner(direction) * 0.25f;
             }
-        } else if (cell.HasRiverThroughEdge(direction.Previous()) && cell.HasRiverThroughEdge(direction.Next2()))
+        } 
+        else if (cell.HasRiverThroughEdge(direction.Previous()) && cell.HasRiverThroughEdge(direction.Next2()))
         {
             center += HexMetrics.GetSecondSolidCorner(direction) * 0.25f;
         }
