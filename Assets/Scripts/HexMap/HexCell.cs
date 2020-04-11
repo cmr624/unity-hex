@@ -68,8 +68,12 @@ public class HexCell : MonoBehaviour
     }
     private int elevation = int.MinValue;
 
-    
-    
+
+
+    public float RiverSurfaceY
+    {
+        get { return (elevation + HexMetrics.riverSurfaceElevationOffset) * HexMetrics.elevationStep; }
+    }
     
     // rivers!!!!
     public float StreamBedY

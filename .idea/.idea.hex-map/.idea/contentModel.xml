@@ -8,6 +8,9 @@
         <e p="Editor" t="Include">
           <e p="HexCoordinatesDrawer.cs" t="Include" />
         </e>
+        <e p="Materials" t="Include">
+          <e p="River.shader" t="Include" />
+        </e>
         <e p="Scripts" t="Include">
           <e p="HexMap" t="Include">
             <e p="HexCell.cs" t="Include" />
@@ -26,6 +29,7 @@
           </e>
         </e>
         <e p="Shaders" t="Include">
+          <e p="River.shader" t="Include" />
           <e p="SurfaceShader.shader" t="Include" />
         </e>
       </e>
