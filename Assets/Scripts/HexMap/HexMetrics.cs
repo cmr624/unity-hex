@@ -79,7 +79,14 @@ public static class HexMetrics
       return (corners[(int) direction] + corners[(int) direction + 1]) * blendFactor;
    }
 
-   
+   public static Vector3 Perturb(Vector3 position)
+       {
+           Vector4 sample = SampleNoise(position);
+           position.x += (sample.x * 2f - 1f) * cellPerturbStrength;
+           //position.y += (sample.y * 2f - 1f) * HexMetrics.cellPerturbStrength;;
+           position.z += (sample.z * 2f - 1f) * cellPerturbStrength;;
+           return position;
+       }
    //edge metrics
 
    public static HexEdgeType GetEdgeType(int elevation1, int elevation2)

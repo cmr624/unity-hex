@@ -21,6 +21,9 @@
           </e>
           <e p="HexMapCamera.cs" t="Include" />
           <e p="HexMapEditor.cs" t="Include" />
+          <e p="Utils" t="Include">
+            <e p="ListPool.cs" t="Include" />
+          </e>
         </e>
         <e p="Shaders" t="Include">
           <e p="SurfaceShader.shader" t="Include" />
