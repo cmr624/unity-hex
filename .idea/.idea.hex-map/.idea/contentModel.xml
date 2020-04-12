@@ -26,7 +26,6 @@
           </e>
         </e>
         <e p="Shaders" t="Include">
-          <e p="RiverShader.shader" t="Include" />
           <e p="SurfaceShader.shader" t="Include" />
         </e>
       </e>

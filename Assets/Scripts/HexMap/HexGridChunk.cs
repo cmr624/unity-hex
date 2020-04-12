@@ -80,7 +80,8 @@ public class HexGridChunk : MonoBehaviour
             center + HexMetrics.GetFirstSolidCorner(direction), 
             center + HexMetrics.GetSecondSolidCorner(direction));
 
-        if (cell.HasRiver)
+        /*
+         * if (cell.HasRiver)
         {
             if (cell.HasRiverThroughEdge(direction))
             {
@@ -101,8 +102,9 @@ public class HexGridChunk : MonoBehaviour
         }
         else
         {
-            TriangulateEdgeFan(center, e, cell.Color);
-        }
+         */
+        TriangulateEdgeFan(center, e, cell.Color);
+        
         if (direction <= HexDirection.SE)
         {
             TriangulateConnection(direction, cell, e);
@@ -212,10 +214,10 @@ public class HexGridChunk : MonoBehaviour
         bridge.y = neighbor.Position.y - cell.Position.y;
         EdgeVertices e2 = new EdgeVertices(e1.v1 + bridge, e1.v5 + bridge);
 
-        if (cell.HasRiverThroughEdge(direction))
-        {
-            e2.v3.y = neighbor.StreamBedY;
-        }
+        //if (cell.HasRiverThroughEdge(direction))
+        //{
+         //   e2.v3.y = neighbor.StreamBedY;
+        //}
         
         //terrace time!!
         if (cell.GetEdgeType(direction) == HexEdgeType.Slope)
@@ -252,8 +254,6 @@ public class HexGridChunk : MonoBehaviour
             {
                 TriangulateCorner(v5, nextNeighbor, e1.v5, cell, e2.v5, neighbor);
             }
-            //AddTriangle(v2, v4, v5);
-            //AddTriangleColor(cell.color, neighbor.color, nextNeighbor.color);
         }
     }
 
