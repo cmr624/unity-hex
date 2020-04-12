@@ -16,13 +16,13 @@ public static class HexMetrics
 
    public const float elevationStep = 3f;
 
-   public const float cellPerturbStrength = 0f;//4f;
+   public const float cellPerturbStrength = 4f;
 
    public static Texture2D noiseSource;
 
    public const float noiseScale = 0.003f;
 
-   public const float elevationPerturbStrength = 0f;//1.5f;
+   public const float elevationPerturbStrength = 1.5f;
 
    public const int chunkSizeX = 5, chunkSizeZ = 5;
 

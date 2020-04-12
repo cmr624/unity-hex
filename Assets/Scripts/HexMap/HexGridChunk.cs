@@ -5,7 +5,7 @@ using UnityEngine;
 public class HexGridChunk : MonoBehaviour
 {
    private HexCell[] cells;
-   public HexMesh terrain, rivers;
+   public HexMesh terrain;//, rivers;
    
    //private HexMesh hexMesh;
    private Canvas gridCanvas;
@@ -47,20 +47,20 @@ public class HexGridChunk : MonoBehaviour
    public void Triangulate()
    {
       terrain.Clear();
-      rivers.Clear();
+      //rivers.Clear();
       for (int i = 0; i < cells.Length; i++)
       {
          Triangulate(cells[i]);
       }
       terrain.Apply();
-      rivers.Apply();
+      //rivers.Apply();
    }
 
    void TriangulateRiverQuad(Vector3 v1, Vector3 v2, Vector3 v3, Vector3 v4, float y)
    {
        v1.y = v2.y = v3.y = v4.y = y;
-       rivers.AddQuad(v1, v2, v3, v4);
-       rivers.AddQuadUV(0f, 1f, 0f, 1f);
+       //rivers.AddQuad(v1, v2, v3, v4);
+       //rivers.AddQuadUV(0f, 1f, 0f, 1f);
    }
    
    
